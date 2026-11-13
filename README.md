@@ -2,7 +2,7 @@
 
 Shift planning, leave requests and a time clock for Mattermost. Built for teams that work in shifts: cafés, shops, care homes, rescue services. Works on desktop and in the iOS and Android apps, in English, French, German and Italian.
 
-**$5 a plugin, $12 for all 3. One-time payment, no subscription.** Get them at **[shiftplugins.com](https://shiftplugins.com)**.
+**$5 a plugin, $12 for all 3. One-time payment, no subscription. Why 5 ? Well, just to pay for a coffee or two.** Get them at **[shiftplugins.com](https://shiftplugins.com)**.
 
 This repository holds the docs, screenshots and issue tracker. The plugins themselves are closed source and download from the website after purchase.
 
