@@ -2,7 +2,7 @@
 
 Shift planning, leave requests and a time clock for Mattermost. Built for teams that work in shifts: cafés, shops, care homes, rescue services. Works on desktop and in the iOS and Android apps, in English, French, German and Italian.
 
-**Free and open source (GPLv3).** Download the packages from [Releases](https://github.com/mike-risky/shiftplugins/releases) or from **[shiftplugins.com](https://shiftplugins.com)**, where you can pay what you want: $0 is fine, or $5 a plugin and $12 for all 3. Why 5? Well, just to pay for a coffee or two.
+**Free and open source (MIT).** Download the packages from [Releases](https://github.com/mike-risky/shiftplugins/releases) or from **[shiftplugins.com](https://shiftplugins.com)**, where you can pay what you want: $0 is fine, or $5 a plugin and $12 for all 3. Why 5? Well, just to pay for a coffee or two.
 
 This repository holds the full source code, docs, screenshots and issue tracker.
 
@@ -92,7 +92,7 @@ cd plugins/planning
 
 **Is it really free?** Yes. Every plugin and every update is free. Paying on the website is optional and works like a tip.
 
-**Can I change the code?** Yes, under the terms of the GPLv3. If you distribute a modified version, it has to stay GPLv3 with its source available.
+**Can I change the code?** Yes. It's MIT licensed: use it, change it, ship it. Just keep the copyright notice.
 
 **Where is the data stored?** In your own Mattermost database, through the plugin key-value store. Nothing leaves your server, and your normal backups cover it.
 
@@ -100,7 +100,7 @@ cd plugins/planning
 
 ## License
 
-[GNU General Public License v3.0 or later](LICENSE). Copyright (C) 2026 Smafe.
+[MIT](LICENSE). Copyright (c) 2026 Smafe.
 
 ## Support
 

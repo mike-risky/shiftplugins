@@ -1,5 +1,5 @@
 #!/bin/sh
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: MIT
 set -e
 cd "$(dirname "$0")"
 V=$(python3 -c "import json;print(json.load(open('plugin.json'))['version'])")

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-3.0-or-later
+/* SPDX-License-Identifier: MIT
  * Copyright (C) 2026 Smafe */
 /* Planning plugin webapp — plain JS, uses the React instance provided by Mattermost. */
 (function () {

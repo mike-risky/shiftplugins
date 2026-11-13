@@ -1,5 +1,5 @@
 #!/bin/sh
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: MIT
 # Builds com.shiftplugins.leave-<version>.tar.gz (server-only plugin, no webapp).
 set -e
 cd "$(dirname "$0")"

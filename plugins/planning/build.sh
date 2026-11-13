@@ -1,5 +1,5 @@
 #!/bin/sh
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: MIT
 # Builds com.shiftplugins.planning-<version>.tar.gz (Go server + plain-JS webapp, no JS build step).
 set -e
 cd "$(dirname "$0")"
