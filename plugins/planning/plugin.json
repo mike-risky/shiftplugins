@@ -1,0 +1,44 @@
+{
+  "id": "com.shiftplugins.planning",
+  "name": "Planning",
+  "description": "Simple shift planning per channel: an admin enables it and creates shifts, members take them, the admin locks them. English, French, German, Italian. By ShiftPlugins (Smafe, Switzerland).",
+  "version": "1.5.0",
+  "homepage_url": "https://shiftplugins.com",
+  "support_url": "https://shiftplugins.com",
+  "min_server_version": "10.0.0",
+  "server": {
+    "executables": {
+      "linux-amd64": "server/dist/plugin-linux-amd64",
+      "linux-arm64": "server/dist/plugin-linux-arm64"
+    }
+  },
+  "webapp": {
+    "bundle_path": "webapp/dist/main.js"
+  },
+  "settings_schema": {
+    "header": "Shift planning per channel. A channel admin enables it with the calendar icon or `/planning enable`. The plugin follows each user's Mattermost language (English, French, German, Italian); bot messages in channels use the server's default language.",
+    "settings": [
+      {
+        "key": "Notify",
+        "display_name": "Channel messages",
+        "type": "bool",
+        "help_text": "The bot posts a message when someone takes or releases a shift.",
+        "default": true
+      },
+      {
+        "key": "AllowSwaps",
+        "display_name": "Shift swaps",
+        "type": "bool",
+        "help_text": "Members can offer their shift to a colleague.",
+        "default": true
+      },
+      {
+        "key": "SwapApproval",
+        "display_name": "Admin approval for swaps",
+        "type": "bool",
+        "help_text": "If on, a channel admin must approve each swap. Otherwise the swap happens straight away.",
+        "default": false
+      }
+    ]
+  }
+}

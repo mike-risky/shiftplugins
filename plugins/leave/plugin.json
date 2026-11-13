@@ -1,0 +1,55 @@
+{
+  "id": "com.shiftplugins.leave",
+  "name": "Leave Requests",
+  "description": "Leave and absence requests: members request time off with a slash command, a manager approves or declines in one tap, and the person gets the answer by direct message. Works in the mobile app. English, French, German and Italian (follows each user's language). By ShiftPlugins (Smafe, Switzerland).",
+  "version": "1.2.0",
+  "homepage_url": "https://shiftplugins.com",
+  "support_url": "https://shiftplugins.com",
+  "min_server_version": "10.0.0",
+  "server": {
+    "executables": {
+      "linux-amd64": "server/dist/plugin-linux-amd64",
+      "linux-arm64": "server/dist/plugin-linux-arm64"
+    }
+  },
+  "settings_schema": {
+    "header": "Members make requests with the slash command (/leave, or /conges, /ferien, /ferie depending on the server's default language). Managers receive each request by direct message from the @leave bot, with Approve / Decline buttons. Everyone sees the plugin in their own Mattermost language (English, French, German, Italian).",
+    "settings": [
+      {
+        "key": "Managers",
+        "display_name": "Managers",
+        "type": "text",
+        "help_text": "Usernames of the people who approve requests, separated by commas (e.g. jane.doe, john). If empty, system admins approve. A manager's own request goes to the other managers.",
+        "default": ""
+      },
+      {
+        "key": "LeaveTypes",
+        "display_name": "Leave types",
+        "type": "text",
+        "help_text": "Your own types, separated by commas (e.g. Vacation, Sick leave, Training). The first type counts toward the yearly allowance. If empty: Vacation, Sick leave (in the server's default language).",
+        "default": ""
+      },
+      {
+        "key": "CountWeekends",
+        "display_name": "Count weekends",
+        "type": "bool",
+        "help_text": "No: only Monday to Friday are counted. Yes: every day of the period is counted.",
+        "default": false
+      },
+      {
+        "key": "AnnualDays",
+        "display_name": "Vacation days per year",
+        "type": "number",
+        "help_text": "If greater than 0, everyone sees their balance for the year (first leave type) under \"My requests\". 0 = no balance.",
+        "default": 0
+      },
+      {
+        "key": "TimeZone",
+        "display_name": "Time zone",
+        "type": "text",
+        "help_text": "IANA time zone used for dates and times, e.g. Europe/Zurich, Europe/Paris, America/New_York. Default: Europe/Zurich.",
+        "default": "Europe/Zurich"
+      }
+    ]
+  }
+}

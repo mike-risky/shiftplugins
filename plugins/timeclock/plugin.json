@@ -1,0 +1,56 @@
+{
+  "id": "com.shiftplugins.timeclock",
+  "name": "Pointage – Time clock",
+  "description": "Staff clock in, take breaks and clock out from a pinned message or /pointage (works in the mobile app). Managers see team hours, fix days and export a monthly CSV. English, French, German and Italian, following each user's language. By ShiftPlugins (Smafe, Switzerland).",
+  "version": "1.2.0",
+  "homepage_url": "https://shiftplugins.com",
+  "support_url": "https://shiftplugins.com",
+  "min_server_version": "10.0.0",
+  "server": {
+    "executables": {
+      "linux-amd64": "server/dist/plugin-linux-amd64",
+      "linux-arm64": "server/dist/plugin-linux-arm64"
+    }
+  },
+  "settings_schema": {
+    "header": "Type `/pointage enable` (or `/pointage activer`) in a channel to pin the clock buttons there. `/pointage` works in every channel. Each person sees the plugin in their own Mattermost language (English, French, German or Italian).",
+    "settings": [
+      {
+        "key": "Managers",
+        "display_name": "Managers",
+        "type": "text",
+        "help_text": "Usernames (comma separated) who can see the whole team's hours, fix them and export them. System admins always can.",
+        "placeholder": "first.last, other.person",
+        "default": ""
+      },
+      {
+        "key": "ReminderHours",
+        "display_name": "Reminder after (hours)",
+        "type": "number",
+        "help_text": "Private reminder to anyone still clocked in after this many hours. 0 = no reminder.",
+        "default": 12
+      },
+      {
+        "key": "MaxHours",
+        "display_name": "Maximum shift length (hours)",
+        "type": "number",
+        "help_text": "Beyond this, a clock-in counts as forgotten: the person must enter their end time, otherwise it counts 0 h until a manager fixes it.",
+        "default": 16
+      },
+      {
+        "key": "SelfEdit",
+        "display_name": "Members can fix their own hours",
+        "type": "bool",
+        "help_text": "Otherwise only managers can fix hours. Fixes are always marked in the export.",
+        "default": false
+      },
+      {
+        "key": "Timezone",
+        "display_name": "Time zone",
+        "type": "text",
+        "help_text": "Time zone used for times and days (IANA format, e.g. Europe/Zurich).",
+        "default": "Europe/Zurich"
+      }
+    ]
+  }
+}

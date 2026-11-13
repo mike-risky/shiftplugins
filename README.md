@@ -2,9 +2,11 @@
 
 Shift planning, leave requests and a time clock for Mattermost. Built for teams that work in shifts: cafés, shops, care homes, rescue services. Works on desktop and in the iOS and Android apps, in English, French, German and Italian.
 
-**$5 a plugin, $12 for all 3. One-time payment, no subscription. Why 5 ? Well, just to pay for a coffee or two.** Get them at **[shiftplugins.com](https://shiftplugins.com)**.
+**Free and open source (GPLv3).** Download the packages from [Releases](https://github.com/mike-risky/shiftplugins/releases) or from **[shiftplugins.com](https://shiftplugins.com)**, where you can pay what you want: $0 is fine, or $5 a plugin and $12 for all 3. Why 5? Well, just to pay for a coffee or two.
 
-This repository holds the docs, screenshots and issue tracker. The plugins themselves are closed source and download from the website after purchase.
+This repository holds the full source code, docs, screenshots and issue tracker.
+
+This repository holds the full source code, docs, screenshots and issue tracker.
 
 | Plugin | What it does | Command | Plugin ID |
 | --- | --- | --- | --- |
@@ -66,6 +68,15 @@ This repository holds the docs, screenshots and issue tracker. The plugins thems
 
 See [docs/install.md](docs/install.md). In short: enable plugin uploads, upload the `.tar.gz` in System Console → Plugins → Plugin Management, then enable it.
 
+## Build from source
+
+Each plugin lives in [`plugins/`](plugins): `planning`, `leave` and `timeclock`. You need Go (the version in each `server/go.mod`). The Planning webapp is plain JavaScript with no build step.
+
+```sh
+cd plugins/planning
+./build.sh   # vets, tests, builds linux amd64 + arm64, writes com.shiftplugins.planning-<version>.tar.gz
+```
+
 ## Compatibility
 
 | | |
@@ -79,11 +90,17 @@ See [docs/install.md](docs/install.md). In short: enable plugin uploads, upload 
 
 ## FAQ
 
-**Is it a subscription?** No. You pay once and download the file. Updates for the same major version are free.
+**Is it really free?** Yes. Every plugin and every update is free. Paying on the website is optional and works like a tip.
+
+**Can I change the code?** Yes, under the terms of the GPLv3. If you distribute a modified version, it has to stay GPLv3 with its source available.
 
 **Where is the data stored?** In your own Mattermost database, through the plugin key-value store. Nothing leaves your server, and your normal backups cover it.
 
-**Refunds?** If it doesn't work on your server, email within 14 days and you get your money back.
+**Refunds?** If you paid and it doesn't work on your server, email within 14 days and you get your money back.
+
+## License
+
+[GNU General Public License v3.0 or later](LICENSE). Copyright (C) 2026 Smafe.
 
 ## Support
 
