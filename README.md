@@ -8,9 +8,9 @@ This repository holds the docs, screenshots and issue tracker. The plugins thems
 
 | Plugin | What it does | Command | Plugin ID |
 | --- | --- | --- | --- |
-| [Planning](#planning) | Monthly shift calendar per channel, take/release shifts, swaps with optional approval | `/planning` | `ch.alaia.planning` |
-| [Leave requests](#leave-requests) | Time-off requests, approve in one tap, who's away, yearly allowance | `/leave` (`/conges`, `/ferien`, `/ferie`) | `ch.alaia.conges` |
-| [Time clock](#time-clock) | Clock in/out from pinned buttons, breaks, manager fixes, CSV export | `/pointage` | `ch.alaia.pointage` |
+| [Planning](#planning) | Monthly shift calendar per channel, take/release shifts, swaps with optional approval | `/planning` | `com.shiftplugins.planning` |
+| [Leave requests](#leave-requests) | Time-off requests, approve in one tap, who's away, yearly allowance | `/leave` (`/conges`, `/ferien`, `/ferie`) | `com.shiftplugins.leave` |
+| [Time clock](#time-clock) | Clock in/out from pinned buttons, breaks, manager fixes, CSV export | `/pointage` | `com.shiftplugins.timeclock` |
 
 ## Planning
 

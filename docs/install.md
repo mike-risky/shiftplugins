@@ -17,14 +17,14 @@ On a self-hosted server that's this part of `config.json`:
 Click **Upload Plugin** and pick the `.tar.gz` you downloaded from shiftplugins.com. Or from the server:
 
 ```sh
-mmctl plugin add ./ch.alaia.planning-1.4.0.tar.gz
+mmctl plugin add ./com.shiftplugins.planning-1.5.0.tar.gz
 ```
 
 With the official Docker setup:
 
 ```sh
-docker cp ch.alaia.planning-1.4.0.tar.gz mattermost:/tmp/
-docker exec mattermost mmctl --local plugin add /tmp/ch.alaia.planning-1.4.0.tar.gz
+docker cp com.shiftplugins.planning-1.5.0.tar.gz mattermost:/tmp/
+docker exec mattermost mmctl --local plugin add /tmp/com.shiftplugins.planning-1.5.0.tar.gz
 ```
 
 ## 3. Enable it
@@ -32,10 +32,10 @@ docker exec mattermost mmctl --local plugin add /tmp/ch.alaia.planning-1.4.0.tar
 Click **Enable** next to the plugin, then open its settings page. Or:
 
 ```sh
-mmctl plugin enable ch.alaia.planning
+mmctl plugin enable com.shiftplugins.planning
 ```
 
-Plugin IDs: `ch.alaia.planning`, `ch.alaia.conges` (Leave requests), `ch.alaia.pointage` (Time clock).
+Plugin IDs: `com.shiftplugins.planning`, `com.shiftplugins.leave` (Leave requests), `com.shiftplugins.timeclock` (Time clock).
 
 ## First steps
 
