@@ -2,7 +2,7 @@
 
 Shift planning, leave requests and a time clock for Mattermost. Built for teams that work in shifts: cafés, shops, care homes, rescue services. Works on desktop and in the iOS and Android apps, in English, French, German and Italian.
 
-**Free and open source (MIT).** Download the packages from [Releases](https://github.com/mike-risky/shiftplugins/releases) or from **[shiftplugins.com](https://shiftplugins.com)**, where you can pay what you want: $0 is fine, or $5 a plugin and $12 for all 3. Why 5? Well, just to pay for a coffee or two.
+**Free and open source (MIT).** Download the ready-to-install packages from **[shiftplugins.com](https://shiftplugins.com)**, where you can pay what you want: $0 is fine, or $5 a plugin and $12 for all 3. Why 5? Well, just to pay for a coffee or two.
 
 This repository holds the full source code, docs, screenshots and issue tracker.
 

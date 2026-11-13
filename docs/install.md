@@ -14,7 +14,7 @@ On a self-hosted server that's this part of `config.json`:
 
 ## 2. Upload the file
 
-Click **Upload Plugin** and pick the `.tar.gz` you downloaded from [Releases](https://github.com/mike-risky/shiftplugins/releases) or shiftplugins.com. Or from the server:
+Click **Upload Plugin** and pick the `.tar.gz` you downloaded from [shiftplugins.com](https://shiftplugins.com) (free, pay what you want) or built from `plugins/`. Or from the server:
 
 ```sh
 mmctl plugin add ./com.shiftplugins.planning-1.5.0.tar.gz
